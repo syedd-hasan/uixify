@@ -1,8 +1,18 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import sicBgImg from "../assets/images/six-sec-bg-img.png";
 import { BsStars } from "react-icons/bs";
+import ContactForm from "../Modal/ContactForm"; // Import the modal component
 
 export const SixSec = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   const items = [
     "Mobile App",
     "Animation",
@@ -29,14 +39,15 @@ export const SixSec = () => {
   return (
     <>
       <div
-        className="md:pb-[230px] "
+        className="md:pb-[230px] pb-[100px] md:bg-[length:auto_450px] bg-[length:auto_190px] h-fit"
         style={{
           background: `url(${sicBgImg}) no-repeat left bottom`,
+          // backgroundSize: "contain",
         }}
       >
         <div data-aos="fade-left">
           <div className="relative md:mt-10" data-aos="fade-left">
-            <div className="w-full py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_0px_3px_#808080]">
+            <div className="w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_0px_3px_#808080]">
               <div className="marquee2">
                 {duplicatedItems.map((item, index) => (
                   <div
@@ -61,7 +72,7 @@ export const SixSec = () => {
           // }}
         >
           <h3
-            className="uppercase text-[#7467fe] text-[50px] md:text-[120px] font-black drop-shadow-md text-center leading-[40px] md:leading-[90px] "
+            className="uppercase text-[#7467fe] text-[50px] md:text-[170px] font-black drop-shadow-md text-center leading-[40px] md:leading-[120px] "
             data-aos="fade-right"
           >
             Collab0 <br />{" "}
@@ -75,11 +86,13 @@ export const SixSec = () => {
             <button
               className="uppercase text-[12px] md:text-[15px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 border border-black border-b-4"
               // data-aos="fade-left"
+              onClick={() => setModalOpen(true)}
             >
               Contact us <BsStars />
             </button>
           </div>
         </div>
+        <ContactForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       </div>
     </>
   );

@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <>
       <div
-        className="bg-[#7366fc] pt-4 md:pt-10"
+        className="bg-[#7366fc] pt-4 md:pt-10 overflow-hidden"
         style={{
           background: `url(${bgImg})`,
           backgroundRepeat: "round",

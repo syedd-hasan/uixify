@@ -62,26 +62,26 @@ export const SecondSec = () => {
             key={index}
             className="second-sec-card-main-div bg-white text-black transition-transform duration-300 ease-in-out transform hover:bg-[#7366fc] hover:text-[#c0ff00] w-full h-full rounded-[30px] p-[20px] drop-shadow-2xl relative"
           >
-            <div className="border-b">
-              <h3 className="capitalize text-[25px] md:text-[30px] text-center font-bold">
+            <div className="border-b pb-4 mb-4">
+              <h3 className="capitalize text-[#7366fc] text-[25px] md:text-[30px] text-center font-bold">
                 {service.title}
               </h3>
             </div>
-            <div className="flex justify-center items-center mt-4 relative w-full h-[350px]">
+            <div className="flex justify-center items-center mt-4 relative w-full xl:h-[350px] md:h-[200px] mt-4">
               <div className="relative w-full h-full">
                 <img
                   alt={service.title}
                   src={service.img}
-                  className="second-sec-card-img object-cover w-full h-full rounded-[30px] transition-opacity duration-300"
+                  className="second-sec-card-img object-cover w-full h-full rounded-[60px] transition-opacity duration-300"
                 />
                 <img
                   alt={`${service.title} Hover`}
                   src={service.imgHover}
-                  className="second-sec-card-hover-img hidden object-cover w-full h-full rounded-[30px] transition-opacity duration-300"
+                  className="second-sec-card-hover-img hidden object-contain w-full h-full rounded-[20px] transition-opacity duration-400"
                 />
               </div>
-              <div className="hidden second-sec-card-icn-div second-sec-card drop-shadow-[0px_1px_4px_black] rotate-[-20deg] absolute right-[10%] bottom-[8%] bg-[#c0ff00] text-[black] rounded-full flex justify-center items-center">
-                <GrLinkNext className="second-sec-card-icn text-[30px] md:text-[40px] m-6" />
+              <div className="hidden second-sec-card-icn-div second-sec-card drop-shadow-[0px_1px_4px_black] ] absolute 2xl:right-[10%] xl:right-[6%] md:right-[10%] right-[5%] 2xl:bottom-[8%] xl:bottom-[10%] md:bottom-[4%] bottom-[6%] bg-[#c0ff00] text-[black] rounded-full flex justify-center items-center">
+                <GrLinkNext className="second-sec-card-icn text-[30px] md:text-[30px] xl:text-[40px] xl:m-6 m-4" />
               </div>
             </div>
           </div>

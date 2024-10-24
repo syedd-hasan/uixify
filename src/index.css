@@ -219,40 +219,58 @@ code {
 }
 
 .second-sec-card-main-div {
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+  transition: transform 0.9s ease, background-color 0.5s ease, color 0.5s ease !important;
 }
+
 .second-sec-card-icn {
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease !important;
+  transition: transform 0.9s ease, background-color 0.5s ease, color 0.5s ease !important;
 }
+
 .second-sec-card-main-div:hover {
   transform: scale(1.04) !important; 
 }
-.second-sec-card-main-div:hover .second-sec-card-img{
+.second-sec-card-main-div:hover h3{
+  color: #c0ff00;
+}
+
+.second-sec-card-main-div:hover .second-sec-card-img {
   display: none;
 }
-.second-sec-card-main-div:hover .second-sec-card-hover-img{
-  display: block;
-}
-/* .second-sec-card-main-div:hover .second-sec-card {
-  transform: scale(1.08) !important; 
-} */
 
-.second-sec-card-main-div:hover .second-sec-card-icn-div{
+.second-sec-card-main-div:hover .second-sec-card-hover-img {
+  transition: right 1.9s ease; /* Smooth transition */
   display: block;
 }
 
+.second-sec-card-icn-div {
+
+  transition: right 1.9s ease;
+}
+
+
+.second-sec-card-icn-div {
+
+  opacity: 0;
+  transition: right 1.9s ease;
+}
+
+.second-sec-card-main-div:hover .second-sec-card-icn-div {
+  display: block;
+
+  opacity: 1;
+}
 
 .second-sec-card-main-div {
   transition: 
-    transform 0.3s ease,          /* Smooth scaling */
-    background-color 0.3s ease,   /* Smooth background color change */
-    color 0.3s ease;               /* Smooth text color change */
+    transform 0.3s ease,         
+    background-color 0.3s ease,  
+    color 0.3s ease;              
 }
 
 .second-sec-card-main-div:hover {
-  transform: scale(1.04);         /* Scale effect on hover */
-  background-color: #7366fc;      /* Background color on hover */
-  color: #c0ff00;                  /* Text color on hover */
+  transform: scale(1.04);         
+  background-color: #7366fc;    
+  color: #c0ff00;                  
 }
 
 /* .btn-hover-eft {
@@ -263,3 +281,13 @@ code {
   scale: 1.05;
 }
 
+
+.header-main {
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 60px; /* Set a height for the header */
+  background-color: #7366fc; /* Background color */
+  z-index: 1000; /* High z-index to ensure it's above other content */
+}

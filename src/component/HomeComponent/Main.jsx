@@ -5,8 +5,18 @@ import { BsStars } from "react-icons/bs";
 import LogoModel from "../CanvasModel/LogoModel";
 import SplineModel from "../CanvasModel/LogoModel";
 import SplineCanvas from "../CanvasModel/LogoModel";
+import ContactForm from "../Modal/ContactForm"; // Import the modal component
 
 export const Main = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   useEffect(() => {
     const script = document.createElement("script");
     script.type = "module";
@@ -44,7 +54,7 @@ export const Main = () => {
   return (
     <>
       <div
-        className="bg-[#7366fc] pt-10 h-fit md:pb-10 pb-6 lg:mt-[62px]"
+        className="bg-[#7366fc] pt-10 h-fit md:pb-10 pb-6 md:mt-[60px] mt-[40px]"
         style={{
           background: `url(${bgImg})`,
           backgroundRepeat: "round",
@@ -90,8 +100,9 @@ export const Main = () => {
                 transforming ideas into user-centered digital experiences."
               </p>
               <button
-                className="btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4"
                 data-aos="fade-right"
+                className="btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4"
+                onClick={() => setModalOpen(true)}
               >
                 BORROW OUR BRILLIANCE <BsStars />
               </button>
@@ -106,7 +117,7 @@ export const Main = () => {
           </div>
         </div>
         <div className="relative md:mt-10" data-aos="fade-left">
-          <div className="absolute top-[45%] w-full py-7 flex overflow-hidden bg-[#c0ff00] rotate-[0deg] drop-shadow-[0px_0px_16px_#b5b4b4]">
+          <div className="absolute top-[45%] w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[0deg] drop-shadow-[0px_0px_16px_#b5b4b4]">
             <div className="marquee">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
@@ -119,7 +130,7 @@ export const Main = () => {
             </div>
           </div>
 
-          <div className="w-full py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_4px_16px_#7e7e7e]">
+          <div className="w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_4px_16px_#7e7e7e]">
             <div className="marquee2">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
@@ -132,6 +143,7 @@ export const Main = () => {
             </div>
           </div>
         </div>
+        <ContactForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
       </div>
     </>
   );

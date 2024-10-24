@@ -20,7 +20,7 @@ export const FifthSec = () => {
           // }}
         >
           <div
-            className="flex flex-col items-center md:items-end justify-center h-[400px] bg-[length:auto_450px]"
+            className="flex flex-col items-center md:items-end justify-center h-[400px] md:bg-[length:auto_450px] bg-[length:auto_200px]"
             style={{
               background: `url(${leftSecImg}) no-repeat left center`,
               backgroundSize: "contain",
@@ -28,7 +28,7 @@ export const FifthSec = () => {
           >
             <h3
               data-aos="fade-right"
-              className="relative uppercase text-[70px] text-[90px] font-black m-0 leading-[70px] text-center drop-shadow-xl"
+              className="relative uppercase text-[70px] md:text-[90px] font-black m-0 leading-[70px] text-center drop-shadow-xl"
             >
               What <br />
               They're
