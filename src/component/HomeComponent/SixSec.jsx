@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import sicBgImg from "../assets/images/six-sec-bg-img.png";
+import sicBgImg from "../assets/images/six-sec-bg-img-n.png";
 import { BsStars } from "react-icons/bs";
 import ContactForm from "../Modal/ContactForm"; // Import the modal component
 
@@ -39,7 +39,7 @@ export const SixSec = () => {
   return (
     <>
       <div
-        className="md:pb-[230px] pb-[100px] md:bg-[length:auto_450px] bg-[length:auto_190px] h-fit"
+        className="md:pb-[160px] pb-[100px] md:bg-[length:auto_450px] bg-[length:auto_190px] h-fit"
         style={{
           background: `url(${sicBgImg}) no-repeat left bottom`,
           // backgroundSize: "contain",
@@ -76,16 +76,16 @@ export const SixSec = () => {
             data-aos="fade-right"
           >
             Collab0 <br />{" "}
-            <span className="text-black md:ml-[150px] ml-[40px]">Rations</span>
+            <span className="text-black md:ml-[250px] ml-[40px]">Rations</span>
           </h3>
           <div
             className="flex flex-col md:flex-row justify-center items-center gap-6"
             data-aos="fade-left"
           >
-            <h3 className="md:text-[40px]">TOGETHER</h3>
+            <h3 className="md:text-[60px] font-semibold">TOGETHER</h3>
             <button
-              className="uppercase text-[12px] md:text-[15px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 border border-black border-b-4"
-              // data-aos="fade-left"
+              className="uppercase text-[12px] md:text-[15px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 border border-black border-b-4 font-semibold"
+              data-aos="fade-left"
               onClick={() => setModalOpen(true)}
             >
               Contact us <BsStars />

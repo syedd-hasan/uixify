@@ -18,7 +18,7 @@ export const ThirdSection = () => {
         <h3 className="text-center text-white mb-6 font-bold text-lg">
           In Collaboration with
         </h3>
-        <div className="thirdSecDiv md:mt-10">
+        <div className="thirdSecDiv md:mt-4">
           {/* {[globalchart, fancyWear, bestBank, cheerful, exDone, slabSpace].map(
             (src, index) => (
               <div

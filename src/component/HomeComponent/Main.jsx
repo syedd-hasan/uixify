@@ -54,7 +54,7 @@ export const Main = () => {
   return (
     <>
       <div
-        className="bg-[#7366fc] pt-10 h-fit md:pb-10 pb-6 md:mt-[60px] mt-[40px]"
+        className="relative bg-[#7366fc] pt-10 h-fit md:pb-10 pb-6 md:mt-[60px] mt-[40px]"
         style={{
           background: `url(${bgImg})`,
           backgroundRepeat: "round",
@@ -76,7 +76,7 @@ export const Main = () => {
             backgroundSize: "40%",
           }}
         >
-          <div className="relative flex items-center flex-wrap gap-x-4 ">
+          <div className="md:relative flex items-center flex-wrap gap-x-4">
             <h1 className="text-white text-4xl 2xl:text-[150px] lg:text-[110px] md:text-[100px] sm:text-[100px] uppercase font-black drop-shadow-[-5px_5px_5px_#3f3f3f] leading-normal md:leading-[150px] h-fit">
               We turn boring {/* <br /> */}
               {/* </h1> */}
@@ -93,7 +93,7 @@ export const Main = () => {
             </button>
           </div>
 
-          <div className="relative flex relative mt-4 md:mt-8">
+          <div className="relative flex relative mt-4 md:mt-8 md:pb-[100px]">
             <div className="w-full ">
               <p className="w-full md:w-[50%] font-medium text-white text-lg md:text-[25px]">
                 We are a team of passionate UI/UX designers dedicated to
@@ -101,7 +101,7 @@ export const Main = () => {
               </p>
               <button
                 data-aos="fade-right"
-                className="btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4"
+                className="absolute btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4 z-50"
                 onClick={() => setModalOpen(true)}
               >
                 BORROW OUR BRILLIANCE <BsStars />

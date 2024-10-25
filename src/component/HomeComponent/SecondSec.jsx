@@ -35,7 +35,10 @@ export const SecondSec = () => {
       </div>
 
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
-        <h2 className="text-[25px] md:text-[55px] font-black uppercase text-black col-span-2 leading-normal lg:leading-[40px] mt-2">
+        <h2
+          className="text-[25px] md:text-[55px] font-black uppercase text-black col-span-2 leading-normal lg:leading-[40px] mt-2"
+          data-aos="fade-right"
+        >
           We don't just <span className="text-[#7467fe]">create </span>
           <span className="xl:block hidden">
             <br />
@@ -43,12 +46,12 @@ export const SecondSec = () => {
           we <span className="text-[#7467fe]">captivate!</span>
         </h2>
         <div>
-          <p className="text-[16px] md:text-[20px]">
+          <p className="text-[16px] md:text-[20px]" data-aos="fade-left">
             "Our mission is to blend creativity with functionality, ensuring
             every design meets the highest standards of user experience."
           </p>
           <button
-            className="btn-hover-eft uppercase text-[16px] md:text-[20px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 border border-black border-b-4 drop-shadow-[0px_1px_4px_black]"
+            className="btn-hover-eft uppercase text-[16px] md:text-[20px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 border border-black border-b-4 "
             data-aos="fade-left"
           >
             GET STARTED <BsStars />

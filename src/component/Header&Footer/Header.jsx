@@ -243,7 +243,7 @@ export default function Navbar() {
                   onClick={() => setModalOpen(true)}
                 >
                   <span className="text-[white] hover:text-black uppercase">
-                    Start a Project
+                    Get a Quote
                   </span>
                 </button>
               </div>
@@ -288,7 +288,7 @@ export default function Navbar() {
                 className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:bg-[#c0ff00] hover:text-black focus:outline-none border border-white"
                 onClick={() => setModalOpen(true)} // Open modal on click
               >
-                <span className="text-white uppercase">Start a Project</span>
+                <span className="text-white uppercase">Get a Quote</span>
               </button>
             </div>
           </div>
