@@ -239,10 +239,10 @@ export default function Navbar() {
               <div className="flex space-x-4">
                 <button
                   type="button"
-                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:bg-[#c0ff00] hover:text-black hover:border-none focus:outline-none bg-transparent border border-white px-3"
+                  className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:bg-[#c0ff00]  hover:text-black hover:border-none focus:outline-none bg-transparent border border-white px-3"
                   onClick={() => setModalOpen(true)}
                 >
-                  <span className="text-[white] hover:text-black uppercase">
+                  <span className="text-[white] font-medium hover:text-black uppercase">
                     Get a Quote
                   </span>
                 </button>

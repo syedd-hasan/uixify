@@ -84,16 +84,16 @@ export const Main = () => {
               into
             </h1>
             <button
-              className="md:absolute md:left-[25%] md:bottom-[15%] mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center hover:scale-105 "
+              className="sm:absolute xl:left-[25%] lg:left-[26%] md:left-[25%] sm:left-[20%] left-[26%] md:bottom-[15%] bottom-[69%] mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center hover:scale-105 "
               // data-aos="fade-left"
             >
-              <span className="uppercase font-bold text-xl md:text-[85px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-8 py-2 rounded-full flex items-center gap-2 border border-black border-dashed">
+              <span className="uppercase font-bold text-[20px] xl:text-[85px] lg:text-[75px] md:text-[65px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-4  rounded-full flex items-center gap-2 border border-black border-dashed">
                 BOLD <BsStars />
               </span>
             </button>
           </div>
 
-          <div className="relative flex relative mt-4 md:mt-8 md:pb-[100px]">
+          <div className="relative flex relative mt-4 md:mt-8 md:pb-[60px]">
             <div className="w-full ">
               <p className="w-full md:w-[50%] font-medium text-white text-lg md:text-[25px]">
                 We are a team of passionate UI/UX designers dedicated to
@@ -101,13 +101,13 @@ export const Main = () => {
               </p>
               <button
                 data-aos="fade-right"
-                className="absolute btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4 z-50"
+                className="md:absolute font-medium btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4 z-50"
                 onClick={() => setModalOpen(true)}
               >
                 BORROW OUR BRILLIANCE <BsStars />
               </button>
             </div>
-            <div className="absolute hidden md:flex justify-center w-full xl:w-[145%] md:w-[125%] sm:w-[135%] xl:h-[465%] md:h-[365%] sm: sm:w-[50%] w-[40%] xl:left-[5%] md:left-[10%]  xl:top-[-230%] top-[-140%]">
+            <div className="absolute hidden md:flex justify-center w-full xl:w-[145%] md:w-[125%] sm:w-[135%] 2xl:h-[695%] xl:h-[660%] lg:h-[560%] md:h-[400%] sm: sm:w-[50%] w-[40%] xl:left-[0%] md:left-[10%]  xl:top-[-380%] lg:top-[-290%] md:top-[-160%]">
               <spline-viewer
                 url="https://prod.spline.design/FwpXkt0J890LbRt1/scene.splinecode"
                 className="main-spline-logo 2xl:h-[600px] md:h-[200px] sm:h-[300px] h-[250px] md:ml-[20%]"
@@ -116,8 +116,8 @@ export const Main = () => {
             </div>
           </div>
         </div>
-        <div className="relative md:mt-10" data-aos="fade-left">
-          <div className="absolute top-[45%] w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[0deg] drop-shadow-[0px_0px_16px_#b5b4b4]">
+        <div className="relative mt-10 ">
+          <div className="absolute top-[45%] w-[110vw] md:py-7 py-3 flex overflow-hidden bg-[#c0ff00] rotate-[0deg] drop-shadow-[0px_0px_16px_#b5b4b4]">
             <div className="marquee">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
@@ -130,7 +130,7 @@ export const Main = () => {
             </div>
           </div>
 
-          <div className="w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_4px_16px_#7e7e7e]">
+          <div className="w-[110vw] md:py-7 py-3 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_4px_16px_#7e7e7e]">
             <div className="marquee2">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
