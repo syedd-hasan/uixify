@@ -72,7 +72,7 @@ export const SixSec = () => {
           // }}
         >
           <h3
-            className="uppercase text-[#7467fe] text-[50px] md:text-[170px] font-black drop-shadow-md text-center leading-[40px] md:leading-[120px] "
+            className="uppercase text-[#7467fe] text-[50px] md:text-[140px] lg:text-[150px] 2xl:text-[170px] font-black drop-shadow-md text-center leading-[40px] md:leading-[120px] "
             data-aos="fade-right"
           >
             Collab0 <br />{" "}

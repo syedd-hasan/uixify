@@ -122,7 +122,7 @@ export const Footer = () => {
         </div>
 
         <h2
-          className="text-center text-[50px] md:text-[85px] lg:text-[250px] text-transparent leading-[0.4] mt-10 md:mt-14 tracking-wide font-black"
+          className="text-center text-[50px] md:text-[85px] xl:text-[250px] lg:text-[170px] text-transparent leading-[0.4] mt-10 md:mt-14 tracking-wide font-black"
           style={{ WebkitTextStroke: "2px #ffff" }}
         >
           CRE

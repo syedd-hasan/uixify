@@ -285,7 +285,7 @@ export default function Navbar() {
               ))}
               <button
                 type="button"
-                className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:bg-[#c0ff00] hover:text-black focus:outline-none border border-white"
+                className="relative rounded-full bg-transparent p-1 text-gray-400 hover:bg-[#c0ff00] hover:text-black focus:outline-none border border-white"
                 onClick={() => setModalOpen(true)} // Open modal on click
               >
                 <span className="text-white uppercase">Get a Quote</span>

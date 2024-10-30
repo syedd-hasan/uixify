@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import bgImg from "../assets/images/HEROPAGE.png";
-import ngEle from "../assets/images/hero-page-bg-elmt.png";
 import { BsStars } from "react-icons/bs";
 import LogoModel from "../CanvasModel/LogoModel";
 import SplineModel from "../CanvasModel/LogoModel";
@@ -84,10 +83,10 @@ export const Main = () => {
               into
             </h1>
             <button
-              className="sm:absolute xl:left-[25%] lg:left-[26%] md:left-[25%] sm:left-[20%] left-[26%] md:bottom-[15%] bottom-[69%] mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center hover:scale-105 "
+              className="absolute xl:left-[24%] lg:left-[27%] md:left-[25%] sm:left-[20%] left-[26%] md:bottom-[15%] bottom-[69%] mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center "
               // data-aos="fade-left"
             >
-              <span className="uppercase font-bold text-[20px] xl:text-[85px] lg:text-[75px] md:text-[65px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-4  rounded-full flex items-center gap-2 border border-black border-dashed">
+              <span className="uppercase font-bold text-[20px] xl:text-[75px] lg:text-[70px] md:text-[60px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-4  rounded-full flex items-center gap-2 border border-black border-dashed">
                 BOLD <BsStars />
               </span>
             </button>
@@ -100,7 +99,7 @@ export const Main = () => {
                 transforming ideas into user-centered digital experiences."
               </p>
               <button
-                data-aos="fade-right"
+                // data-aos="fade-right"
                 className="md:absolute font-medium btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4 z-50"
                 onClick={() => setModalOpen(true)}
               >

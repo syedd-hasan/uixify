@@ -11,7 +11,7 @@ import { GrLinkNext } from "react-icons/gr";
 const services = [
   { title: "UI / UX Design", img: uiUxDesignImg, imgHover: uiUxDesignImgHover },
   {
-    title: "3D Illustration",
+    title: "Animation",
     img: dIllustrationImg,
     imgHover: dIllustrationImgHover,
   },
