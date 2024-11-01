@@ -53,60 +53,46 @@ export const Main = () => {
   return (
     <>
       <div
-        className="relative bg-[#7366fc] pt-10 h-fit md:pb-10 pb-6 md:mt-[60px] mt-[40px]"
+        className="relative bg-[#7366fc] flex flex-col justify-between pt-10  h-fit md:pb-10 2xl:mt-[60px] md:mt-[60px] mt-[40px]"
         style={{
           background: `url(${bgImg})`,
           backgroundRepeat: "round",
           backgroundSize: "cover",
         }}
       >
-        <div
-          className="container mx-auto px-2 "
-          style={{
-            background: `url(${(
-              <div className="absolute flex justify-center w-full sm:w-[45%]  md:right-0 right-[-30%] bottom-[-60%]">
-                <spline-viewer
-                  url="https://prod.spline.design/FwpXkt0J890LbRt1/scene.splinecode"
-                  className="main-spline-logo md:h-[500px] sm:h-[400px] h-[250pc]"
-                  style={{ width: "100%" }}
-                ></spline-viewer>
-              </div>
-            )}) no-repeat right bottom`,
-            backgroundSize: "40%",
-          }}
-        >
+        <div className="container mx-auto px-2">
           <div className="md:relative flex items-center flex-wrap gap-x-4">
-            <h1 className="text-white text-4xl 2xl:text-[150px] lg:text-[110px] md:text-[100px] sm:text-[100px] uppercase font-black drop-shadow-[-5px_5px_5px_#3f3f3f] leading-normal md:leading-[150px] h-fit">
-              We turn boring {/* <br /> */}
+            <h1 className="text-white text-4xl 2xl:text-[150px] xl:text-[110px] lg:text-[85px] md:text-[80px] sm:text-[100px] uppercase font-black drop-shadow-[-5px_5px_5px_#3f3f3f] leading-normal md:leading-[100px] lg:leading-[90px] xl:leading-[130px] 2xl:leading-[150px] h-fit">
+              We turn boring <br className=" hidden" />
               {/* </h1> */}
               {/* <h1 className=" md:block text-white text-4xl md:text-[130px]  sm:text-[120px] uppercase font-black  drop-shadow-[-5px_5px_5px_#3f3f3f] leading-normal md:leading-[150px] w-fit"> */}
               into
             </h1>
             <button
-              className="absolute xl:left-[24%] lg:left-[27%] md:left-[25%] sm:left-[20%] left-[26%] md:bottom-[15%] bottom-[69%] mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center "
+              className="absolute xl:left-[24%] lg:left-[25%] md:left-[25%] sm:left-[20%] left-[26%] lg:bottom-[8%] md:bottom-[15%] bottom-[69%] items-center mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] rotate-[-15deg]  bg-[#c0ff00] p-2  rounded-full flex items-center "
               // data-aos="fade-left"
             >
-              <span className="uppercase font-bold text-[20px] xl:text-[75px] lg:text-[70px] md:text-[60px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-4  rounded-full flex items-center gap-2 border border-black border-dashed">
+              <span className="uppercase font-bold text-[20px] xl:text-[70px] lg:text-[50px] md:text-[50px] sm:text-[40px] bg-[#c0ff00] md:px-4 px-4  rounded-full flex items-center gap-2 border border-black border-dashed">
                 BOLD <BsStars />
               </span>
             </button>
           </div>
 
-          <div className="relative flex relative mt-4 md:mt-8 md:pb-[60px]">
+          <div className="relative flex relative mt-4 lg:py-[4px] xl:mt-8  xl:pb-[60px]">
             <div className="w-full ">
               <p className="w-full md:w-[50%] font-medium text-white text-lg md:text-[25px]">
                 We are a team of passionate UI/UX designers dedicated to
-                transforming ideas into user-centered digital experiences."
+                transforming ideas into user-centered digital experiences.
               </p>
               <button
                 // data-aos="fade-right"
-                className="md:absolute font-medium btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-lg md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 md:mt-8 border border-black border-b-4 z-50"
+                className="md:absolute font-medium btn-hover-eft transition-transform duration-300 ease-in-out drop-shadow-[0px_0px_3px_#808080] uppercase text-[10px] md:text-[25px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 xl:mt-8 lg:mt-[12px] border border-black border-b-4 z-50"
                 onClick={() => setModalOpen(true)}
               >
                 BORROW OUR BRILLIANCE <BsStars />
               </button>
             </div>
-            <div className="absolute hidden md:flex justify-center w-full xl:w-[145%] md:w-[125%] sm:w-[135%] 2xl:h-[695%] xl:h-[660%] lg:h-[560%] md:h-[400%] sm: sm:w-[50%] w-[40%] xl:left-[0%] md:left-[10%]  xl:top-[-380%] lg:top-[-290%] md:top-[-160%]">
+            <div className="absolute flex justify-center w-full xl:w-[145%] md:w-[125%] sm:w-[140%] 2xl:h-[695%] xl:h-[660%] lg:h-[660%] md:h-[400%] h-[200%] sm:w-[50%] w-[160%] xl:left-[0%] md:left-[10%]  xl:top-[-380%] lg:top-[-290%] md:top-[-160%]">
               <spline-viewer
                 url="https://prod.spline.design/FwpXkt0J890LbRt1/scene.splinecode"
                 className="main-spline-logo 2xl:h-[600px] md:h-[200px] sm:h-[300px] h-[250px] md:ml-[20%]"
@@ -115,7 +101,7 @@ export const Main = () => {
             </div>
           </div>
         </div>
-        <div className="relative mt-10 ">
+        <div className="relative mt-14 ">
           <div className="absolute top-[45%] w-[110vw] md:py-7 py-3 flex overflow-hidden bg-[#c0ff00] rotate-[0deg] drop-shadow-[0px_0px_16px_#b5b4b4]">
             <div className="marquee">
               {duplicatedItems.map((item, index) => (

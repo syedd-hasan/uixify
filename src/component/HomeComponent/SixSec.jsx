@@ -39,10 +39,10 @@ export const SixSec = () => {
   return (
     <>
       <div
-        className="md:pb-[160px] pb-[100px] md:bg-[length:auto_450px] bg-[length:auto_190px] h-fit"
+        className="md:pb-[160px] pb-[100px] md:bg-[length:30%] bg-[length:40%] h-fit"
         style={{
           background: `url(${sicBgImg}) no-repeat left bottom`,
-          // backgroundSize: "contain",
+          // backgroundSize: "30%",
         }}
       >
         <div data-aos="fade-left">

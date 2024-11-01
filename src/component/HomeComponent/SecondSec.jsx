@@ -47,8 +47,8 @@ export const SecondSec = () => {
         </h2>
         <div>
           <p className="text-[16px] md:text-[20px]" data-aos="fade-left">
-            "Our mission is to blend creativity with functionality, ensuring
-            every design meets the highest standards of user experience."
+            Our mission is to blend creativity with functionality, ensuring
+            every design meets the highest standards of user experience.
           </p>
           <button
             className="btn-hover-eft uppercase text-[16px] md:text-[20px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 border border-black border-b-4 "

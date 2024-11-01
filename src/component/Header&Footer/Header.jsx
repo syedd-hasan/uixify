@@ -148,10 +148,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import ContactForm from "../Modal/ContactForm"; // Import the modal component
 
 const navigation = [
-  { name: "About", to: "about" },
   { name: "Service", to: "services" },
+  { name: "About", to: "projects" },
   { name: "Projects", to: "blogs" },
-  { name: "Blogs", to: "projects" },
+  // { name: "Blogs", to: "projects" },
   { name: "Testimonials", to: "testimonials" },
 ];
 
