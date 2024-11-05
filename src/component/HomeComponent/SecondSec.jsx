@@ -7,6 +7,7 @@ import uiUxDesignImgHover from "../assets/images/ui-ux-design-service-hover.png"
 import dIllustrationImgHover from "../assets/images/3d-illustration-service-hover.png";
 import logoBrandingHover from "../assets/images/logo-branding-service-hover.png";
 import { GrLinkNext } from "react-icons/gr";
+import ContactForm from "../Modal/ContactForm"; // Import the modal component
 
 const services = [
   { title: "UI / UX Design", img: uiUxDesignImg, imgHover: uiUxDesignImgHover },
@@ -19,6 +20,15 @@ const services = [
 ];
 
 export const SecondSec = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div
       id="services"
@@ -27,7 +37,7 @@ export const SecondSec = () => {
       {/* Background Text */}
       <div className="absolute inset-0 top-[20%] flex items-start justify-center pointer-events-none">
         <h2
-          className="text-[50px] md:text-[75px] lg:text-[125px] mb-8 font-bold text-[white] opacity-30 leading-[1]"
+          className="text-[40px] md:text-[75px] lg:text-[125px] mb-8 font-bold text-[white] opacity-30 leading-[1]"
           style={{ WebkitTextStroke: "2px #b6b1f8" }}
         >
           OUR SERVICES
@@ -53,6 +63,7 @@ export const SecondSec = () => {
           <button
             className="btn-hover-eft uppercase text-[16px] md:text-[20px] bg-[#c0ff00] hover:scale-105 px-4 py-2 rounded-full flex gap-2 mt-5 border border-black border-b-4 "
             data-aos="fade-left"
+            onClick={() => setModalOpen(true)}
           >
             GET STARTED <BsStars />
           </button>
@@ -90,6 +101,7 @@ export const SecondSec = () => {
           </div>
         ))}
       </div>
+      <ContactForm isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
     </div>
   );
 };

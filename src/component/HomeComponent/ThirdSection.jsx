@@ -152,12 +152,10 @@ export const ThirdSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-4 justify-center mt-6 md:mt-14">
           <button
             type="button"
-            className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:bg-[#c0ff00] hover:text-black hover:border-[#c0ff00] bg-transparent border border-white px-6"
+            className="relative rounded-full bg-gray-800 p-1  hover:bg-[#c0ff00] text-[white] hover:text-black hover:border-[#c0ff00] bg-transparent border border-white px-6"
             data-aos="fade-up"
           >
-            <span className="text-white font-semibold hover:text-black uppercase">
-              Discover
-            </span>
+            <span className="font-semibold uppercase">Discover</span>
           </button>
           {/* <h4 className="text-white text-lg md:text-4xl">
             whether you need work

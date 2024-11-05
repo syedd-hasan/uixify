@@ -147,7 +147,7 @@ const ContactForm = ({ isOpen, onClose }) => {
                     Select Service*
                   </option>
                   <option value="UI UX Design">UI UX Design</option>
-                  <option value="3D Illustration">3D Illustration</option>
+                  <option value="3D Illustration">Animation</option>
                   <option value="Logo & Branding">Logo & Branding</option>
                 </select>
                 <textarea

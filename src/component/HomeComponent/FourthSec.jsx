@@ -91,7 +91,7 @@ export const FourthSec = () => {
     <>
       <div id="blogs" className="container px-2 m-auto py-[40px]">
         {/* <div className="grid md:grid-cols-3 grid-cols-1 gap-4"> */}
-        <h2 className=" md:text-[95px] text-[45px] font-black uppercase">
+        <h2 className=" md:text-[90px] text-[45px] font-black uppercase">
           Creativity in <span className="text-[#7467fe]">action</span>
         </h2>
         <div>
@@ -105,7 +105,7 @@ export const FourthSec = () => {
               />
             ))}
           </div>
-          <p className="text-[16px] md:text-[20px] text-[#6f6f6f] mt-3">
+          <p className="text-[16px] md:text-[18px] text-[#6f6f6f] mt-3">
             Sure, anyone can claim to be creative. But at Uixify, we prefre to
             let our work do the talking. From sleek, Intuitive design to
             jawdropping animations and videos that actually get watched, our
