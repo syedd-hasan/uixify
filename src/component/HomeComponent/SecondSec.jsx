@@ -81,7 +81,7 @@ export const SecondSec = () => {
                 {service.title}
               </h3>
             </div>
-            <div className="flex justify-center items-center mt-4 relative w-full xl:h-[350px] md:h-[200px] mt-4">
+            <div className="flex justify-center items-center mt-4 relative w-full xl:h-[350px] md:h-[200px] h-[250px] mt-4">
               <div className="relative w-full h-full">
                 <img
                   alt={service.title}

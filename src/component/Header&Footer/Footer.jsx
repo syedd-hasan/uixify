@@ -1,5 +1,6 @@
 import React from "react";
 import cheerLogo from "../assets/images/cheerful.png";
+import designrushLogo from "../assets/logos/designrush.png";
 import bgImg from "../assets/images/HEROPAGE.png";
 import globalchart from "../assets/images/globalchart.png";
 import fancyWear from "../assets/images/fancywear.png";
@@ -84,10 +85,10 @@ export const Footer = () => {
                 <h6 className="text-white text-[15px] mb-1">
                   123 Tech Avenue, Innovation City, TX 75001
                 </h6>
-                <h6 className="text-white text-[15px] mb-1">info@uixify.com</h6>
-                <h6 className="text-white text-[15px] mb-1">
+                <h6 className="text-white text-[15px] mb-1">omer@uixify.com</h6>
+                {/* <h6 className="text-white text-[15px] mb-1">
                   +1(123) 4546-7890
-                </h6>
+                </h6> */}
               </div>
             </div>
             {/* Special Links */}
@@ -106,16 +107,28 @@ export const Footer = () => {
               </div>
             </div>
             {/* Company Links */}
-            <div className="flex flex-col gap-2">
-              <h4 className="text-white font-semibold text-[20px]">Company</h4>
-              <div>
-                {["Sign Up", "Contact", "Office Map", "FAQs"].map(
-                  (item, index) => (
-                    <h6 key={index} className="text-white text-[15px] mb-1">
+            <div className="md:flex justify-between">
+              <div className="flex flex-col gap-2">
+                <h4 className="text-white w-fit font-semibold text-[20px]">
+                  Company
+                </h4>
+                <div className="w-fit">
+                  {["Contact", "Office Map", "FAQs"].map((item, index) => (
+                    <h6
+                      key={index}
+                      className="text-white w-fit text-[15px] mb-1"
+                    >
                       {item}
                     </h6>
-                  )
-                )}
+                  ))}
+                </div>
+              </div>
+              <div>
+                <img
+                  src={designrushLogo}
+                  alt="Design Rush Logo"
+                  className="object-contain w-auto h-[150px]"
+                />
               </div>
             </div>
           </div>

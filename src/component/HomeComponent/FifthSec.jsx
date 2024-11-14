@@ -7,6 +7,7 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper/modules";
 import user1 from "../assets/user/user1.png";
 import user2 from "../assets/user/user2.png";
+import "./SixSec.css";
 
 export const FifthSec = () => {
   return (
@@ -57,7 +58,7 @@ export const FifthSec = () => {
                 // loop={true}
                 grabCursor={true}
                 modules={[EffectCards]}
-                className="mySwiper"
+                className="mySwiper reviewSwiper"
               >
                 <SwiperSlide>
                   <div className="flex flex-col  pb-4 pt-8 px-6 h-full text-black">

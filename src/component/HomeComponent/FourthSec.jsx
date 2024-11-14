@@ -55,7 +55,7 @@ export const FourthSec = () => {
     { title: "All", content: "This is the content of Tab 1" },
     { title: "UI/UX DESIGN", content: "This is the content of Tab 2" },
     { title: "LOGO & BRANDING", content: "This is the content of Tab 3" },
-    { title: "Animation", content: "This is the content of Tab 4" },
+    { title: "ANIMATION", content: "This is the content of Tab 4" },
   ];
 
   const images = [
@@ -144,10 +144,17 @@ export const FourthSec = () => {
                       className="object-contain w-full"
                     />
                   </div>
-                  <div className="col-span-2 w-full flex justify-center ">
+                  <div className=" w-full flex justify-center ">
                     <img
                       alt="Star"
-                      src={b8}
+                      src={ui2}
+                      className="object-cover h-full w-auto"
+                    />
+                  </div>
+                  <div className=" w-full flex justify-center ">
+                    <img
+                      alt="Star"
+                      src={an6}
                       className="object-cover h-full w-auto"
                     />
                   </div>
@@ -161,21 +168,28 @@ export const FourthSec = () => {
                   <div className="w-full">
                     <img
                       alt="Star"
-                      src={ui2}
+                      src={ui5}
                       className="object-contain w-full"
                     />
                   </div>
                   <div className="w-full">
                     <img
                       alt="Star"
-                      src={ui5}
+                      src={b5}
                       className="object-contain w-full"
                     />
                   </div>
-                  <div className="col-span-2 w-full flex justify-center ">
+                  <div className=" w-full flex justify-center ">
                     <img
                       alt="Star"
-                      src={b1}
+                      src={an8}
+                      className="object-cover h-full w-auto"
+                    />
+                  </div>
+                  <div className=" w-full flex justify-center ">
+                    <img
+                      alt="Star"
+                      src={ui7}
                       className="object-cover h-full w-auto"
                     />
                   </div>
@@ -297,7 +311,7 @@ export const FourthSec = () => {
                 </div>
               </div>
             )}
-            {workSection[activeWorkSectionTabs].title === "Animation" && (
+            {workSection[activeWorkSectionTabs].title === "ANIMATION" && (
               <div>
                 <div className="grid md:grid-cols-3 grid-cols-2 gap-3 my-5">
                   <div className=" w-full flex justify-center ">

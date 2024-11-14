@@ -54,7 +54,7 @@ export const Main = () => {
     <>
       <div
         // className="relative bg-[#7366fc] flex flex-col justify-between pt-10  h-[95vh] md:pb-10 2xl:mt-[60px] md:mt-[60px] mt-[40px]"
-        className="relative bg-[#7366fc] flex flex-col justify-between pt-10 min-[2000px]:h-[600px] lg:h-[100vh] md:h-[780px] h-[490px] max-[2000px]:pt-[10vh] "
+        className="relative bg-[#7366fc] flex flex-col justify-between pt-10 min-[2000px]:h-[600px] lg:h-[100vh] sm:h-[780px] h-[450px] max-[2000px]:pt-[10vh] "
         style={{
           background: `url(${bgImg})`,
           backgroundRepeat: "round",
@@ -78,7 +78,7 @@ export const Main = () => {
               </span>
             </button> */}
             <button
-              className="sm:absolute left-[22%]  bottom-[12%] items-center mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] md:rotate-[-15deg] rotate-[-13deg] bg-[#c0ff00] p-2  rounded-full flex items-center "
+              className="sm:absolute lg:left-[22%] sm:left-[27%]  left-[22%]  bottom-[12%] items-center mb-4 drop-shadow-[-5px_5px_5px_#3f3f3f] md:rotate-[-15deg] rotate-[-13deg] bg-[#c0ff00] p-2  rounded-full flex items-center "
               // data-aos="fade-left"
             >
               <span className="uppercase font-bold text-[20px] xl:text-[70px] lg:text-[50px] md:text-[40px] sm:text-[40px] bg-[#c0ff00] px-4    rounded-full flex items-center gap-2 border border-black border-dashed">
@@ -138,7 +138,7 @@ export const Main = () => {
             style={{ width: "100%" }}
           ></spline-viewer>
         </div> */}
-        <div className="absolute flex justify-center xl:w-[145%] md:w-[125%] sm:w-[140%]  md:h-[120%] h-[30vh] sm:w-[50%] w-[160%] xl:left-[0%] md:left-[10%] sm:top-[0] top-[50%]">
+        <div className="absolute hidden md:flex justify-center xl:w-[145%] md:w-[125%] sm:w-[140%]  md:h-[120%] h-[30vh] sm:w-[50%] w-[160%] xl:left-[0%] md:left-[10%] sm:top-[0] top-[50%]">
           <spline-viewer
             url="https://prod.spline.design/FwpXkt0J890LbRt1/scene.splinecode"
             className="main-spline-logo 2xl:h-[600px] md:h-[200px] sm:h-[300px] h-[250px] md:ml-[20%]"
@@ -150,7 +150,7 @@ export const Main = () => {
             <div className="marquee">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
-                  <div className="border-4 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
+                  <div className="md:border-4 border-2 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
                   <h1 className="uppercase text-[20px] md:text-[30px] font-bold whitespace-nowrap">
                     {item}
                   </h1>
@@ -163,7 +163,7 @@ export const Main = () => {
             <div className="marquee2">
               {duplicatedItems.map((item, index) => (
                 <div key={index} className="flex items-center tracking-widest">
-                  <div className="border-4 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
+                  <div className="md:border-4 border-2 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
                   <h1 className="uppercase text-[20px] md:text-[30px] font-bold whitespace-nowrap">
                     {item}
                   </h1>

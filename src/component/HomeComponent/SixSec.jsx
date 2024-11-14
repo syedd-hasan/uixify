@@ -39,7 +39,7 @@ export const SixSec = () => {
   return (
     <>
       <div
-        className="md:pb-[160px] pb-[100px] md:bg-[length:30%] bg-[length:40%] h-fit"
+        className="md:pb-[0] pb-[80px] md:bg-[length:30%] bg-[length:40%] h-fit"
         style={{
           background: `url(${sicBgImg}) no-repeat left bottom`,
           // backgroundSize: "30%",
@@ -47,14 +47,14 @@ export const SixSec = () => {
       >
         <div data-aos="fade-left">
           <div className="relative md:mt-10" data-aos="fade-left">
-            <div className="w-[110vw] py-7 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_0px_3px_#808080]">
+            <div className="w-[110vw] md:py-3 py-3 flex overflow-hidden bg-[#c0ff00] rotate-[-3deg] mt-4 drop-shadow-[0px_0px_3px_#808080]">
               <div className="marquee2">
                 {duplicatedItems.map((item, index) => (
                   <div
                     key={index}
                     className="flex items-center tracking-widest"
                   >
-                    <div className="border-4 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
+                    <div className="md:border-4 border-2 border-[#606060] mx-2 md:mx-8 h-[30px]"></div>
                     <h1 className="uppercase text-[20px] md:text-[30px] font-bold whitespace-nowrap">
                       {item}
                     </h1>

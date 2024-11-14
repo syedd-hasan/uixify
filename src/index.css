@@ -1,56 +1,63 @@
 /* src/fonts/fonts.css */
 
 @font-face {
-  font-family: 'ClashDisplay-Extralight';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Extralight.ttf') format('truetype');
+  font-family: "ClashDisplay-Extralight";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Extralight.ttf")
+    format("truetype");
   font-weight: 200;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Light';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Light.ttf') format('truetype');
+  font-family: "ClashDisplay-Light";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Light.ttf")
+    format("truetype");
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Regular';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-family: "ClashDisplay-Regular";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Regular.ttf")
+    format("truetype");
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Medium';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-family: "ClashDisplay-Medium";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Medium.ttf")
+    format("truetype");
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Semibold';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Semibold.ttf') format('truetype');
+  font-family: "ClashDisplay-Semibold";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Semibold.ttf")
+    format("truetype");
   font-weight: 800;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Bold';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Bold.ttf') format('truetype');
+  font-family: "ClashDisplay-Bold";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Bold.ttf")
+    format("truetype");
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'ClashDisplay-Variable';
-  src: url('./component/assets/fonts/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-family: "ClashDisplay-Variable";
+  src: url("./component/assets/fonts/fonts/ClashDisplay-Variable.ttf")
+    format("truetype");
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -64,32 +71,32 @@
 /* Global Styles */
 body {
   margin: 0;
-  font-family: 'ClashDisplay-Variable', sans-serif; 
+  font-family: "ClashDisplay-Variable", sans-serif;
 }
 h1 {
   margin: 0;
-  font-family: 'ClashDisplay-bold', sans-serif; 
+  font-family: "ClashDisplay-bold", sans-serif;
 }
 h2 {
   margin: 0;
-  font-family: 'ClashDisplay-bold', sans-serif; 
+  font-family: "ClashDisplay-bold", sans-serif;
 }
 h4 {
   margin: 0;
-  font-family: 'ClashDisplay-Semibold', sans-serif; 
+  font-family: "ClashDisplay-Semibold", sans-serif;
 }
 h5 {
   margin: 0;
-  font-family: 'ClashDisplay-Medium', sans-serif; 
+  font-family: "ClashDisplay-Medium", sans-serif;
 }
 p {
   margin: 0;
-  font-family: 'ClashDisplay-Regular', sans-serif; 
+  font-family: "ClashDisplay-Regular", sans-serif;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
-
 
 .marquee {
   display: flex;
@@ -123,10 +130,6 @@ code {
   }
 }
 
-
-
-
-
 .swiper {
   width: 340px;
   height: 420px;
@@ -142,80 +145,20 @@ code {
   color: #fff;
 }
 
-.swiper-slide:nth-child(1n) {
-  background-color: rgba(192, 255, 0, 0.7); 
-  backdrop-filter: blur(10px); 
-}
-.swiper-slide .swiper-div-img {
-  background-color: rgba(171, 228, 1, 0.9); 
-  border: #fff solid 1px;
-}
-
-
-.swiper-slide:nth-child(2n) {
-  background-color: rgba(116, 103, 254, 0.7);
-  backdrop-filter: blur(10px);
-}
-.swiper-slide .swiper-div-img2 {
-  background-color: rgba(116, 103, 254, 0.9); 
-  border: #fff solid 1px;
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: rgba(159, 150, 255, 0.7); 
-  backdrop-filter: blur(10px); 
-}
-.swiper-slide .swiper-div-img3 {
-  background-color: rgba(159, 150, 255, 0.9); 
-  border: #fff solid 1px;
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgba(244, 250, 255, 0.7); 
-  backdrop-filter: blur(10px); 
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgba(8, 7, 5, 0.7); 
-  backdrop-filter: blur(10px); 
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218, 0.7);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
-}
-
-
-.main-spline-logo #container #hints #logo{
+.main-spline-logo #container #hints #logo {
   display: none !important;
 }
-
 
 .main-spline-logo #logo {
   display: none !important;
 }
 
 .spline-viewer {
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .spline-viewer:hover {
-  pointer-events: auto; 
+  pointer-events: auto;
 }
 
 .second-sec-card-main-div {
@@ -227,9 +170,9 @@ code {
 }
 
 .second-sec-card-main-div:hover {
-  transform: scale(1.04) !important; 
+  transform: scale(1.04) !important;
 }
-.second-sec-card-main-div:hover h3{
+.second-sec-card-main-div:hover h3 {
   color: #c0ff00;
 }
 
@@ -243,13 +186,10 @@ code {
 }
 
 .second-sec-card-icn-div {
-
   transition: right 1.9s ease;
 }
 
-
 .second-sec-card-icn-div {
-
   opacity: 0;
   transition: right 1.9s ease;
 }
@@ -261,16 +201,13 @@ code {
 }
 
 .second-sec-card-main-div {
-  transition: 
-    transform 0.3s ease,         
-    background-color 0.3s ease,  
-    color 0.3s ease;              
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .second-sec-card-main-div:hover {
-  transform: scale(1.04);         
-  background-color: #7366fc;    
-  color: #c0ff00;                  
+  transform: scale(1.04);
+  background-color: #7366fc;
+  color: #c0ff00;
 }
 
 /* .btn-hover-eft {
@@ -280,7 +217,6 @@ code {
 .btn-hover-eft:hover {
   scale: 1.05;
 }
-
 
 .header-main {
   position: fixed; /* Fixed position */
