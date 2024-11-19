@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -75,9 +76,9 @@ export const Footer = () => {
         </div>
 
         <div className="container mx-auto px-4 py-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-6">
             {/* Contact info */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col md:col-span-2 gap-2">
               <h4 className="text-white font-semibold text-[20px]">
                 Get in touch
               </h4>
@@ -85,14 +86,14 @@ export const Footer = () => {
                 <h6 className="text-white text-[15px] mb-1">
                   123 Tech Avenue, Innovation City, TX 75001
                 </h6>
-                <h6 className="text-white text-[15px] mb-1">omer@uixify.com</h6>
+                <h6 className="text-white text-[15px] mb-1">omar@uixify.com</h6>
                 {/* <h6 className="text-white text-[15px] mb-1">
                   +1(123) 4546-7890
                 </h6> */}
               </div>
             </div>
             {/* Special Links */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col md:col-span-2 gap-2  md:items-center">
               <h4 className="text-white font-semibold text-[20px]">
                 Special Link
               </h4>
@@ -107,28 +108,27 @@ export const Footer = () => {
               </div>
             </div>
             {/* Company Links */}
-            <div className="md:flex justify-between">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-white w-fit font-semibold text-[20px]">
-                  Company
-                </h4>
-                <div className="w-fit">
-                  {["Contact", "Office Map", "FAQs"].map((item, index) => (
-                    <h6
-                      key={index}
-                      className="text-white w-fit text-[15px] mb-1"
-                    >
-                      {item}
-                    </h6>
-                  ))}
-                </div>
+            <div className="flex flex-col md:col-span-2 gap-2 md:items-center">
+              <h4 className="text-white w-fit font-semibold text-[20px]">
+                Company
+              </h4>
+              <div className="w-fit">
+                {["Contact", "Office Map", "FAQs"].map((item, index) => (
+                  <h6 key={index} className="text-white w-fit text-[15px] mb-1">
+                    {item}
+                  </h6>
+                ))}
               </div>
-              <div>
-                <img
-                  src={designrushLogo}
-                  alt="Design Rush Logo"
-                  className="object-contain w-auto h-[150px]"
-                />
+            </div>
+            <div className="flex flex-col gap-2">
+              <div className="w-full flex  md:justify-start">
+                <Link to="https://www.designrush.com">
+                  <img
+                    src={designrushLogo}
+                    alt="Design Rush Logo"
+                    className="object-contain w-auto h-[140px]"
+                  />
+                </Link>
               </div>
             </div>
           </div>
